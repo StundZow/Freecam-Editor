@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="ciel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2b4f"/>
+      <stop offset="0.55" stop-color="#b8676a"/>
+      <stop offset="1" stop-color="#f3b27a"/>
+    </linearGradient>
+    <radialGradient id="soleil" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3d6"/>
+      <stop offset="0.45" stop-color="#ffd38a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffb46b" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text { font-family: 'Arial Narrow', 'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif; font-stretch: condensed; }
+      .ligne { font-size: 16px; fill: #fff; }
+      .choisie { font-size: 16px; fill: #000; }
+      .valeur { text-anchor: end; }
+    </style>
+  </defs>
+
+  <!-- Decor : coucher de soleil sur la ville -->
+  <rect width="1280" height="720" fill="url(#ciel)"/>
+  <circle cx="930" cy="560" r="150" fill="url(#soleil)"/>
+  <g fill="#1a1d2b">
+    <rect x="360" y="560" width="70" height="160"/>
+    <rect x="440" y="520" width="55" height="200"/>
+    <rect x="505" y="585" width="80" height="135"/>
+    <rect x="595" y="470" width="48" height="250"/>
+    <path d="M655 720V380l30-30 30 30v340z"/>
+    <rect x="725" y="540" width="65" height="180"/>
+    <rect x="800" y="500" width="50" height="220"/>
+    <rect x="860" y="600" width="90" height="120"/>
+    <rect x="960" y="455" width="58" height="265"/>
+    <rect x="1028" y="560" width="72" height="160"/>
+    <rect x="1110" y="510" width="52" height="210"/>
+    <rect x="1172" y="590" width="108" height="130"/>
+    <rect x="0" y="640" width="1280" height="80"/>
+  </g>
+
+  <!-- Menu de reglages (touche G) -->
+  <g transform="translate(26,43)">
+    <rect width="294" height="36" fill="#141414" fill-opacity="0.92"/>
+    <text x="8" y="26" style="font-size:24px; fill:#fff;">FREECAM B-ROLL</text>
+
+    <g transform="translate(0,36)">
+      <rect y="0" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="17.5">Modifs graphiques</text><text class="ligne valeur" x="286" y="17.5">ON</text>
+
+      <rect y="25.2" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="42.7">Caméra smooth</text><text class="ligne valeur" x="286" y="42.7">ON</text>
+
+      <rect y="50.4" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="67.9">Smooth : rotation</text><text class="ligne valeur" x="286" y="67.9">2.50</text>
+
+      <rect y="75.6" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="93.1">Smooth : déplacement</text><text class="ligne valeur" x="286" y="93.1">2.00</text>
+
+      <rect y="100.8" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="118.3">Verrouillage vertical</text><text class="ligne valeur" x="286" y="118.3">ON</text>
+
+      <rect y="126" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="143.5">Vitesse</text><text class="ligne valeur" x="286" y="143.5">12.5 m/s</text>
+
+      <rect y="151.2" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="168.7">FOV (zoom)</text><text class="ligne valeur" x="286" y="168.7">50</text>
+
+      <rect y="176.4" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="193.9">Sensibilité souris</text><text class="ligne valeur" x="286" y="193.9">5.00</text>
+
+      <rect y="201.6" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="219.1">Ciel propre</text><text class="ligne valeur" x="286" y="219.1">100 %</text>
+
+      <rect y="226.8" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="244.3">Nuages</text><text class="ligne valeur" x="286" y="244.3">0 %</text>
+
+      <rect y="252" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="269.5">Forcer le grand soleil</text><text class="ligne valeur" x="286" y="269.5">ON</text>
+
+      <rect y="277.2" width="294" height="25.2" fill="#f0f0f0" fill-opacity="0.92"/>
+      <text class="choisie" x="8" y="294.7">Distance d'affichage</text><text class="choisie valeur" x="286" y="294.7">x8</text>
+
+      <rect y="302.4" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="319.9">Distance des ombres</text><text class="ligne valeur" x="286" y="319.9">x3.0</text>
+
+      <rect y="327.6" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="345.1">Cacher mon perso</text><text class="ligne valeur" x="286" y="345.1">ON</text>
+
+      <rect y="352.8" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="370.3">Texte de confirmation</text><text class="ligne valeur" x="286" y="370.3">ON</text>
+
+      <rect y="378" width="294" height="25.2" fill="#000" fill-opacity="0.67"/>
+      <text class="ligne" x="8" y="395.5">Réinitialiser</text>
+    </g>
+
+    <!-- Aide de la ligne choisie -->
+    <rect y="439.2" width="294" height="39.6" fill="#141414" fill-opacity="0.92"/>
+    <text x="8" y="455" style="font-size:13px; fill:#d2d2d2;">Décor, véhicules et piétons restent détaillés de plus loin.</text>
+    <text x="8" y="471" style="font-size:13px; fill:#d2d2d2;">x1 = normal. Plus haut = plus lourd pour le PC.</text>
+
+    <rect y="478.8" width="294" height="21.6" fill="#000" fill-opacity="0.78"/>
+    <text x="8" y="493.5" style="font-size:11.5px; fill:#aaa;">Flèches : choisir / régler  -  Entrée : valider  -  G : fermer</text>
+  </g>
+</svg>
